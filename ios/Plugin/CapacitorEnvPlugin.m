@@ -6,3 +6,6 @@
 CAP_PLUGIN(CapacitorEnvPlugin, "CapacitorEnv",
            CAP_PLUGIN_METHOD(echo, CAPPluginReturnPromise);
 )
+CAP_PLUGIN(CapacitorEnvPlugin, "CapacitorEnv",
+           CAP_PLUGIN_METHOD(get, CAPPluginReturnPromise);
+)
