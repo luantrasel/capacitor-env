@@ -7,4 +7,7 @@ export class CapacitorEnvWeb extends WebPlugin implements CapacitorEnvPlugin {
     console.log('ECHO', options);
     return options;
   }
+  async get(/* options: { key: string } */): Promise<{ value: string }> {
+    return { value: '' };
+  }
 }

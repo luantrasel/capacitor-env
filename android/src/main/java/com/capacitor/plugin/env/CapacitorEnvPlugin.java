@@ -19,4 +19,24 @@ public class CapacitorEnvPlugin extends Plugin {
         ret.put("value", implementation.echo(value));
         call.resolve(ret);
     }
+
+    @PluginMethod
+    public void get(PluginCall call) {
+        String key = call.getString("key");
+
+        try {
+            // Get the BuildConfig class dynamically
+            Class<?> buildConfigClass = Class.forName(this.bridge.getContext().getPackageName() + ".BuildConfig");
+
+            // Use reflection to get the field value
+            String value = (String) buildConfigClass.getField(key).get(null);
+
+            JSObject result = new JSObject();
+            result.put(key, value);
+
+            call.success(result);
+        } catch (Exception e) {
+            call.error("Error reading BuildConfig field: " + e.getMessage());
+        }
+    }
 }
