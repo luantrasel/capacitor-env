@@ -1,10 +1,10 @@
 import { WebPlugin } from '@capacitor/core';
 export class CapacitorEnvWeb extends WebPlugin {
-    async echo(options) {
-        console.log('ECHO', options);
-        return options;
-    }
-    async get( /* options: { key: string } */) {
+    // async echo(options: { value: string }): Promise<{ value: string }> {
+    //   console.log('ECHO', options);
+    //   return options;
+    // }
+    async get() {
         return { value: '' };
     }
 }

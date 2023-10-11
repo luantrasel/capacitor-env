@@ -13,40 +13,20 @@ npx cap sync
 
 <docgen-index>
 
-* [`echo(...)`](#echo)
-* [`get(...)`](#get)
+* [`get()`](#get)
 
 </docgen-index>
 
 <docgen-api>
 <!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
 
-### echo(...)
+### get()
 
 ```typescript
-echo(options: { value: string; }) => Promise<{ value: string; }>
+get() => Promise<any>
 ```
 
-| Param         | Type                            |
-| ------------- | ------------------------------- |
-| **`options`** | <code>{ value: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
-
---------------------
-
-
-### get(...)
-
-```typescript
-get(options: { key: string; }) => Promise<{ value: string; }>
-```
-
-| Param         | Type                          |
-| ------------- | ----------------------------- |
-| **`options`** | <code>{ key: string; }</code> |
-
-**Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+**Returns:** <code>Promise&lt;any&gt;</code>
 
 --------------------
 
