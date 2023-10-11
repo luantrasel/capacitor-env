@@ -10,6 +10,9 @@ var capacitorCapacitorEnv = (function (exports, core) {
             console.log('ECHO', options);
             return options;
         }
+        async get( /* options: { key: string } */) {
+            return { value: '' };
+        }
     }
 
     var web = /*#__PURE__*/Object.freeze({

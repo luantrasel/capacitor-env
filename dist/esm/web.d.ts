@@ -6,4 +6,7 @@ export declare class CapacitorEnvWeb extends WebPlugin implements CapacitorEnvPl
     }): Promise<{
         value: string;
     }>;
+    get(): Promise<{
+        value: string;
+    }>;
 }

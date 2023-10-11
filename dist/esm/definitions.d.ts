@@ -4,4 +4,9 @@ export interface CapacitorEnvPlugin {
     }): Promise<{
         value: string;
     }>;
+    get(options: {
+        key: string;
+    }): Promise<{
+        value: string;
+    }>;
 }

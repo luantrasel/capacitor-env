@@ -13,6 +13,9 @@ class CapacitorEnvWeb extends core.WebPlugin {
         console.log('ECHO', options);
         return options;
     }
+    async get( /* options: { key: string } */) {
+        return { value: '' };
+    }
 }
 
 var web = /*#__PURE__*/Object.freeze({

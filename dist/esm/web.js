@@ -4,5 +4,8 @@ export class CapacitorEnvWeb extends WebPlugin {
         console.log('ECHO', options);
         return options;
     }
+    async get( /* options: { key: string } */) {
+        return { value: '' };
+    }
 }
 //# sourceMappingURL=web.js.map
